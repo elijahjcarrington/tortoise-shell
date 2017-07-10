@@ -1,0 +1,275 @@
+/*Global*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: black;
+}
+
+body {
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+
+/*Hero*/
+
+.hero {
+  margin: 0 auto;
+  height: 30rem;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/glasses-bg.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.overlay {
+  float: right;
+  width: 30%;
+  margin: 10rem auto;
+  padding: 1.5rem 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+}
+
+.overlay h1 {
+  text-transform: uppercase;
+  flex: 1 auto;
+  display: inline-flex;
+}
+
+
+/*Header*/
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  width: 80%;
+  position: absolute;
+  margin: 1rem 10%;
+  background-color: cadetblue;
+}
+
+nav {
+  margin: 1rem auto;
+  float: right;
+  display: flex;
+  flex-flow: row;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.logo .title {
+  color: white;
+  font-size: 1rem;
+}
+
+.logo {
+  margin: 1rem auto;
+  width: 50%;
+  display: inline-flex;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+
+/*Main*/
+
+.main {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.services, .content {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.content {
+  margin-top: 0;
+}
+
+.service {
+  flex: 1 20rem;
+  margin: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.icon img {
+  width: 5rem;
+}
+
+.service p {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.content h3 {
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: cadetblue;
+}
+
+.content p {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.philosophy, .appointments {
+  margin: 1rem 2.5%;
+  border: 1px solid cadetblue;
+}
+
+
+/*Footer*/
+
+.copyright {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  padding: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: azure;
+}
+
+.copyright p {
+  margin-left: 1rem;
+}
+
+.copyright img {
+  height: 1.25rem;
+}/*Some comment*/
+
+
+/*Queries*/
+
+nav.desktop {
+  display: flex;
+}
+
+nav.mobile, nav.tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .overlay {
+    margin: 20rem auto 0 auto;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    word-wrap: normal;
+  }
+  .overlay h1 {
+    font-size: 1.33rem;
+  }
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  /*Change to 480px*/
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+  nav.desktop, .logo p {
+    display: none;
+  }
+  nav.mobile {
+    display: flex;
+  }
+  .services {
+    flex-flow: row wrap;
+    margin: 3.77rem auto;
+  } 
+  .content {
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .philosophy, .appointments {
+    margin: 0 auto;
+    border: none;
+  }
+  .philosophy {
+    margin-bottom: 4rem;
+  }
+  .copyright {
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright p {
+    display: none;
+  }
+}
+
+
+/**/
